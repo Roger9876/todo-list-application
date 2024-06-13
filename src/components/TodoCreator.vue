@@ -1,6 +1,6 @@
 <template>
   <div class="input-wrap" :class="{ 'input-err': todoState.invalid }">
-    <input type="text" v-model="todoState.todo" />
+    <input type="text" v-model="todoState.todo" @keydown.enter="createTodo" placeholder="Add a todo"/>
     <TodoButton @click="createTodo" />
   </div>
   <p v-show="todoState.invalid" class="err-msg">{{ todoState.errMsg }}</p>

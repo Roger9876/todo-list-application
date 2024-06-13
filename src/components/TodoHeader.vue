@@ -3,7 +3,7 @@
     <nav class="container">
       <div class="branding">
         <img src="../assets/todolist.png" alt="">
-        <h1>ToDos</h1>
+        <h1>Todo List</h1>
       </div>
       <ul class="nav-routes">
         <RouterLink to="/">Home</RouterLink>
